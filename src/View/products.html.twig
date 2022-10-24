@@ -9,13 +9,10 @@
 </head>
 
 <body>
-    <h1>Hello {{ name }} !</h1>
-    <ul>
-    {% for person in persons %}
-        {% if person.age > 18 %}
-            {{ person.name }}
-        {% endif %}
-    {% endfor %}
+    <ul> {% for product in products %}
+        <li>{{ product }}
+        {% endfor %}
+        {{dump(products)}};
     </ul>
 </body>
 </html>
